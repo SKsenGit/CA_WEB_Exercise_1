@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Contact form</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="contactform.html">Contact form</a>
+      </nav>
+      <img src="/images/writtencatjpg.jpg" alt="Fill the form">
+    <form action="/index.html" method="get"> 
+        <select name="appeal" id="appeal">
+            <option value="unspecified">Unspecified</option>
+            <option value="mr">Mr</option>
+            <option value="mrs">Mrs</option>
+        </select><br/>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="lname">Email:</label><br>
+        <input type="text" id="email" name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size="30" required><br><br>
+
+        <label for="lname">Phone number:</label><br>
+        <input type="text" id="phone" name="phone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
+        type="tel" pattern="/d/"><br><br>
+
+        <input type="radio" id="email" name="response_way" value="email">
+        <label for="email">by email</label>
+        <input type="radio" id="phone" name="response_way" value="phone">
+        <label for="phone">by phone</label><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea rows="5" cols="60" id="comments" name="comments" placeholder="Enter text"></textarea><br/>
+
+        <input type="submit" value="submit"/>
+
+    </form>
+</body>
+</html>
